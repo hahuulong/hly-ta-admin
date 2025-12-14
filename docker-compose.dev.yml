@@ -1,0 +1,14 @@
+services:
+    spa:
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        container_name: fe-vite-container
+        ports:
+            - '5173:5173'
+        restart: unless-stopped
+        environment:
+            - CHOKIDAR_USEPOLLING=true
+        volumes:
+            - .:/app
+            - /app/node_modules

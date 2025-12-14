@@ -1,0 +1,17 @@
+# Base image Node
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package.json + package-lock.json
+COPY package*.json ./
+RUN npm install
+
+# Copy toàn bộ source code
+COPY . .
+
+# Expose port Vite dev server
+EXPOSE 5173
+
+# Chạy dev server với env dev
+CMD ["npm", "run", "dev"]
