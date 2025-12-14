@@ -11,7 +11,7 @@ export function LogoutButton() {
         auth.logout();
         queryClient.clear();
         await router.invalidate();
-        router.navigate({ to: '/login', replace: true });
+        // router.navigate({ to: '/login', replace: true });
     };
 
     return <button onClick={handleLogout}>Logout</button>;
