@@ -239,7 +239,7 @@ export default function CompoundSoundLesson() {
                     {/* Variants */}
                     <div className="mt-6 space-y-3">
                         <div className="flex justify-between">
-                            <span className="font-medium">Biến thể</span>
+                            <span className="font-medium">Cách đọc</span>
                             <button onClick={addVariant} className="text-sm text-blue-600">
                                 + Thêm
                             </button>

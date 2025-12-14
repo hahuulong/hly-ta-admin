@@ -1,3 +1,4 @@
+import AudioRecorder from '@/components/common/AudioRecorder';
 import ClassStudent from '@/components/pages/admindemo/ClassStudent';
 import CompoundSoundLesson from '@/components/pages/admindemo/CompoundSoundLesson';
 import PhoneticLesson from '@/components/pages/admindemo/PhoneticLesson';
@@ -31,6 +32,9 @@ export default function Index() {
                     <button className="rounded bg-amber-400 p-2 cursor-pointer" onClick={mockData}>
                         Mock data
                     </button>
+                    <div>
+                        <AudioRecorder />
+                    </div>
                 </div>
 
                 <nav className="p-2 space-y-1">

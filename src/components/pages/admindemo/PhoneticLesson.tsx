@@ -273,7 +273,7 @@ export default function PhoneticLesson() {
                     {/* VARIANTS */}
                     <div className="mt-6 space-y-3">
                         <div className="flex justify-between">
-                            <span className="font-medium">Biến thể đọc</span>
+                            <span className="font-medium">Cách đọc (nặng, nhẹ) của âm</span>
                             <button onClick={addVariant} className="text-sm text-blue-600">
                                 + Thêm
                             </button>
